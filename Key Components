@@ -1,0 +1,6 @@
+1. Docker Daemon: A background service responsible for managing Docker containers.
+2. Docker CLI: A command line interface enabling users to interact with docker.
+3. Docker images: Read-only templates that contain application code, runtime librares and dependencies. Images are the basis for creating Docker containers.
+4. Docker file: A script that contains a series of instructions to build a Docker image.
+5. Docker Containers. The runnable instances of docker images. Containers are isolated from each other but can interact through defined channels.
+6. Docker Hub: Cloud based registry service where users can share , store and manage docker images. 
