@@ -1,0 +1,15 @@
+docker images : List images
+docker ps: List running containers
+docker ps -a : List all the containers
+docker build: Create a docker image from the docker file
+docker pull : download an image from the docker hub
+docker run: Run a container from a docker image
+docker stop : stop a running container
+docker rm : Remove a stopped container
+docker rmi: Remove a Docker image
+docker build -t image_name .  : Creating docker image from a docker file
+docker exec -it container_id /bash : Getting into docker shell
+docker logs container_id : To check running container logs
+docker inspect container_id : To inspect the container
+
+
