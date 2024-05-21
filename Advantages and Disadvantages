@@ -1,0 +1,11 @@
+Advantages:
+Efficiency: Uses fewer resources compared to VMs since containers share the host OS kernel.
+Scalibilty: Makes it easy to scale applications up and down quickly.
+Isolation: Each container runs in its own isolated environment, reducing conflicts between applications
+Lightweight
+
+Disadvantages:
+Difficult to manage large number off containers.
+Does not provide cross platform compatibility.
+Docker is not a good solution for applications that need rich Gui.
+
