@@ -1,0 +1,18 @@
+# Base image
+FROM base_image:tag
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the local code to the container
+COPY . .
+
+# Install dependencies if needed
+# Example for Python with pip
+RUN pip install -r requirements.txt
+
+# Expose the port your app runs on
+EXPOSE 8080
+
+# Command to run your application
+CMD ["python", "app.py"]
