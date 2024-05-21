@@ -16,3 +16,16 @@ EXPOSE 8080
 
 # Command to run your application
 CMD ["python", "app.py"]
+
+
+FROM: Specifies the base image to use for your container. Replace base_image with the name of the base image you want to use and tag with the version tag.
+
+WORKDIR: Sets the working directory inside the container where subsequent commands will be executed. In this example, it's set to /app.
+
+COPY: Copies files from your local machine to the container. In this example, it copies all files from the current directory (.) to the /app directory inside the container.
+
+RUN: Executes commands inside the container during the build process. Here, it installs dependencies. Replace with the appropriate commands for your specific setup.
+
+EXPOSE: Informs Docker that the container will listen on the specified port at runtime. Replace 8080 with the port your application listens on.
+
+CMD: Specifies the command to run when the container starts. In this example, it runs a Python script named app.py. Modify it according to your application's entry point.
