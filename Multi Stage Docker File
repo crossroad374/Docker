@@ -1,0 +1,22 @@
+Multi-stage Dockerfile syntax allows you to build a Docker image using multiple stages, where each stage represents a separate build environment. This feature is particularly useful for optimizing the size of your Docker images and separating build dependencies from the final production image.
+
+sample Template
+
+# Stage 1: Build stage
+FROM base_image AS build_stage
+
+# Install dependencies and build application
+RUN some_command_to_install_dependencies
+RUN some_command_to_build_application
+
+# Stage 2: Production stage
+FROM another_base_image AS production_stage
+
+# Copy artifacts from the build stage
+COPY --from=build_stage /path/to/artifacts /destination/path
+
+# Additional configuration or steps for the production image
+RUN additional_commands_if_needed
+
+# Specify the command to run when the container starts
+CMD ["/path/to/startup/script"]
